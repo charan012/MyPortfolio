@@ -1,0 +1,135 @@
+
+.navbar-brand {
+    cursor:pointer;
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    transition: all .4s;
+}
+
+@media (max-width:34em) {
+    .nav-menu {
+        background: #161212 !important;
+    }
+}
+
+
+.nav-item{
+    padding-bottom: 2px;
+    padding-left: 1px;
+} 
+
+.menu-item {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 0px 5px 1px 0px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer; /* Added cursor property */
+}
+
+@media (max-width: 34em) {
+    .menu-item {
+        padding: 10px 10px 10px;
+    }
+}
+
+.navbar-toggler {
+    cursor: pointer;
+    outline: 0;
+}
+
+.ham {
+    transition: width 0.3s;
+    background: #F9F8F7;
+}
+
+.line1, .line3  {
+    width: 28px;
+    height: 2px;
+    margin: 6px;    
+    transition:  0.4s;
+    
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+    color: yellow;
+}
+
+.dropdown-item {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.costum-navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #000000 !important;  
+    position: fixed;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+    background-color: #131916;
+    box-shadow: 0 5px 30px rgba(255,255,255,0.3);
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+    padding: 10px;
+}
+
+li::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 3;
+    width: 0;
+    height: 2px;
+    transition: width .5s;
+}
+
+#myNavbar li:hover::after {
+    width: 90%;
+    background-color: #ffcc00;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+  
+

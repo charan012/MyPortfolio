@@ -1,0 +1,98 @@
+.skills-container {
+    margin: 40px auto;
+    padding: 90px 0px 0px 20px;
+    max-width: 1050px;
+    color: #f1f2f3;
+  }
+  
+  .skills-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #f7e17e;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .skills-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .skill img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .skill-content {
+    flex-grow: 1;
+  }
+  
+  .skill-content p {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .skill-bar {
+    background-color: #333;
+    height: 7px;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #1ae077;
+    transition: width 0.8s ease-in-out;
+  }
+  
+  
+  .show{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .box:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 16px rgba(165, 141, 141, 0.37);
+  }
+
+#container{
+  padding: 10px 0px 40px 0px;
+}
+
+  .box {
+    width: 550px;
+    background-image: linear-gradient(90deg, #443333, transparent);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    opacity: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease-in-out;  
+  }
+
+  #container.show .box {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  

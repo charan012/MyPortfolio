@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+.home-container {
+    background-image: url('src/assets/images/abstract-line.jpg');
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.6);
+  z-index: 1;
+}
+
+.home-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.home-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-text h1 {
+  font-family: 'Constantia';
+  font-weight: 900;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  color:#f7e17e;
+  font-size: 3.5rem;
+}
+
+.home-con {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.home-hr {
+  width: 90px;
+  margin: 16px auto;
+  border: 1px solid #d2f77e;
+  opacity: 0.8;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #d4d3d3;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-btn {
+  padding: 10px 20px;
+  border: 2px solid #3dff98;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.home-btn:hover {
+  background-color: #3dff98;
+  color: #000 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(61, 255, 152, 0.2);
+}
+
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-bottom {
+  animation: fadeInBottom 1.2s ease-out forwards;
+}
+
+.fade-in-bottom-delayed {
+  opacity: 0;
+  animation: fadeInBottom 1.2s ease-out 0.5s forwards;
+}
+
+
+.wrapper {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+  }
+  
+  .fixed-bg {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: table;
+    position: relative;
+  }
+  
+  .fixed-bg h1 {
+    margin: 20px 0;
+  }
+  
+  .qhr{
+    color: #7bf34c;
+    font-size: 4.8rem;
+  }
+  
+  .quote-container {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.9em;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .quote-container p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    color: #e2d5d5;
+  }
+  
+  .quote-container .author {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: #e2d5d5;
+  }
+  
+  .hrr{
+    width: 8%;
+    margin: 10px auto;
+    border: 2px solid #7bf34c;
+    margin-top: 35px ;
+  }
+  
+  .bg-2 {
+    background-image: url('src/assets/images/ccclok (1).jpg');
+    opacity: 0.8;
+  }
+
+  .bg-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .bg-2 > * {
+    position: relative;
+    z-index: 2;
+  }
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 40px 20px;
+    }
+    
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .home-con {
+        font-size: 1.2rem;
+    }
+    
+    .home-description {
+        font-size: 1rem;
+    }
+    
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .home-btn {
+        margin: 10px 0 !important;
+        width: 200px;
+    }
+}

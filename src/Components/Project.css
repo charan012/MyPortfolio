@@ -1,0 +1,176 @@
+
+.heading {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 36px;
+  color: #d2f77e;
+}
+
+.portfolio {
+  padding: 50px 0 0 0;
+}
+
+.portfolio h1{
+    font-size: 2.2rem;
+    color: #f7e17e;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.portfolio-navbar {
+  text-align: center;
+  margin: 20px auto;
+  width: 85%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.portfolio-navbar li {
+  display: inline-block;
+}
+
+.portfolio-navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fcf9f9;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-navbar a:hover {
+  background-color: #ffcc00;
+  color: rgb(12, 9, 9);
+  border-radius: 4px;
+}
+
+
+.portfolio-grid {
+  display: grid;
+  margin-left: 140px;
+  margin-right: 60px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 20px 40px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-grid.transitioning {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.item-1 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.item-2, .item-3 {
+  grid-column: span 3;
+}
+
+.item-4 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.item-5, .item-6 {
+  grid-column: span 3;
+}
+
+.item-7 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.item-8 {
+  grid-column: span 3;
+}
+
+
+.portfolio-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.portfolio-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.proj-title{
+  font-family: 'Poppins', sans-serif;
+  color: #d2f77e;
+  font-size: 20px;
+}
+
+.proj-desc{
+  font-family: 'Poppins', sans-serif;
+}
+
+.source-button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.source-button:hover {
+  background-color: #e6b800;
+  color: #fff;
+}
+
+.image-wrapper:hover .portfolio-image {
+  transform: scale(1.1);
+}
+
+.image-wrapper:hover .portfolio-hover {
+  opacity: 1;
+}
