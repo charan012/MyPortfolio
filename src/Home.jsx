@@ -1,7 +1,7 @@
-import About from "./About";
-import Contact from "./Contact";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import About from "./components/About.jsx";
+import Projects from "./components/Projects.jsx";
+import Skills from "./components/Skills.jsx";
+import Contact from "./components/Contact.jsx";
 import "./Home.css";
 import React from "react"; 
 import { Link } from "react-scroll";

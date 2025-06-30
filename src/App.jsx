@@ -1,14 +1,14 @@
 import React from "react"; 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Skills from "./components/Skills";
+import Home from "./Home.jsx";
+import About from "./components/About.jsx";
+import Projects from "./components/Projects.jsx";
+import Skills from "./components/Skills.jsx";
+import Contact from "./components/Contact.jsx";
+import Navbar from "./components/Navbar.jsx";
 import "./App.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Contact.css";
+import "./contact.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Contact = () => {

@@ -45,7 +45,7 @@ const About = () => {
 
         <div className="col-md-6 about-text">
           <h4 className="about-heading">
-            Transforming visions into exceptional portfolios
+            A curious mind shaping ideas into interactive reality.
           </h4>
           <p>
             I'm a motivated Full Stack Developer with 8 months of hands-on

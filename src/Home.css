@@ -147,7 +147,6 @@
     text-align: left;
     font-size: 1.9em;
     position: relative;
-    padding-bottom: 10px;
   }
   
   .quote-container p {
@@ -171,7 +170,7 @@
     width: 8%;
     margin: 10px auto;
     border: 2px solid #7bf34c;
-    margin-top: 35px ;
+    margin-top: 30px ;
   }
   
   .bg-2 {

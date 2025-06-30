@@ -17,9 +17,9 @@ const Skills = () => {
     css: "90%",
     react: "90%",
     javascript: "85%",
-    nodejs: "70%",
+    nodejs: "75%",
     sql: "95%",
-    java: "75%",
+    java: "80%",
   };
 
   const skillsRef = useRef(null);
